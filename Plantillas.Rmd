@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Creación de las plantillas de elicitación
 
-Año 2010
+Año 2012
 
 ```{r, fig.align="center"}
 library(ggplot2)
@@ -25,7 +25,7 @@ ggplot(datos, aes(x,y))+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
   geom_vline(xintercept=seq(0, 150, 5), color="gray")+
   geom_hline(yintercept=c(0,5,15,20,35,50,60,75,90,95,100), color="gray")+
-  ggtitle ("Precio de un mazda 3 modelo 2010 en millones de pesos")+
+  ggtitle ("Precio de un mazda 3 modelo 2012 en millones de pesos")+
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
@@ -34,7 +34,7 @@ ggplot(datos, aes(x,y))+
 
 
 
-Año 2015
+Año 2016
 
 ```{r, fig.align="center"}
 library(ggplot2)
@@ -48,26 +48,9 @@ ggplot(datos, aes(x,y))+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
   geom_vline(xintercept=seq(0, 150, 5), color="gray")+
   geom_hline(yintercept=c(0,5,15,20,35,50,60,75,90,95,100), color="gray")+
-  ggtitle ("Precio de un mazda 3 modelo 2015 en millones de pesos")+
+  ggtitle ("Precio de un mazda 3 modelo 2016 en millones de pesos")+
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
 
 
-Año 2020
-
-```{r, fig.align="center"}
-library(ggplot2)
-x <- seq(0, 100000, by=1000)
-y <- seq(0, 100, by=1)
-datos <- data.frame(x,y)
-par(pty="s")
-ggplot(datos, aes(x,y))+ 
-  scale_y_continuous(breaks=c(0,5,15,20,35,50,60,75,90,95,100), labels = c("Totalmente imposible", "Me parece muy improbable", "Me parece un poco improbable", "No me genera seguridad", "Es más bien algo incierto", "Ni acuerdo ni en contra(50-50)", "Pudiera ser, pero...", "Me parece algo posible", "Me parece demasiado viable", "Estoy casi seguro", "Absolutamente seguro"), name=" ") +
-  scale_x_continuous(breaks=seq(0, 150, 5), name=" ")+
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
-  geom_vline(xintercept=seq(0, 150, 5), color="gray")+
-  geom_hline(yintercept=c(0,5,15,20,35,50,60,75,90,95,100), color="gray")+
-  ggtitle ("Precio de un mazda 3 modelo 2020 en millones de pesos")+
-  theme(plot.title = element_text(hjust = 0.5))
-```
