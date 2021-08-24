@@ -1,0 +1,27 @@
+---
+title: "Tasa de cambio del precio de un mazda 3 a través de los años"
+subtitle: "Trabajo final Estadística Bayesiana"
+author: 
+- "Jennifer Salazar Galvis"
+- "Juan Esteban Sánchez Pulgarin"
+date: "1 de septiembre del 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<center> <h2> Introducción </h2> </center>
+
+
+El auge de la compra y venta  de los carros de segunda, es decir carros usados o semi nuevos ha tomado un gran impacto en la actualidad; a medida que pasan los años se ha vuelto una de las alternativas más viables para las personas interesadas en un automóvil, dado que manejan precios más favorables (ahorrar y pagar es más accesible) que los carros nuevos y en muchos casos estos pueden ser conseguidos en estados muy óptimos, además que una gran ventaja de comprar un carro usado es que, eventualmente, puedes venderlo en los próximos años por casi la misma cantidad que pagaste por él .
+
+A partir del impacto que se ha destacado en la sociedad que es comprar y vender carros de segunda nace la motivación de plantear un modelo que estudie los precios de los carros través de los años, es decir cual es el precio promedio de una referencia de carro de un año determinado comparado con los demás años (Ej: cuánto aumenta el precio de un carro por ser modelo 2014 comparado con el del año anterior 2013), pero dado que los precios de carros pueden variar mucho de una marca a otra se toma la decisión de concentrarse en un marca en particular de automóvil que es el mazda3, el cual es un carro de gama media muy comercial, además de ser un carro que al público en general le atrae por las buenas características que este posee, por otro lado, el mazda 3 lleva muchos años en el mercado y sigue siendo un carro que actualmente sigue actualizando sus modelos.
+
+Para realizar este estudio se decide utilizar técnicas basadas en la estadística Bayesiana, la cual aparte de necesitar una muestra de los precios de carros, realiza la construcción de una distribución a priori de los precios de los carros basados en el conocimiento que tiene un experto en el área tienen frente a este tema que se quiere estudiar.
+
+
+
+
